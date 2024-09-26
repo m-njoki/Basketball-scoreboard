@@ -1,0 +1,67 @@
+body {
+    margin: 0px 0px 30px 0px;
+    background: url(images/2.jpeg);
+    background-size: cover;
+    font-family: Tiny5, sans-serif;
+    text-align: center;                                      
+}
+
+#header{
+    margin: 30px auto;
+    text-align: center;
+}
+
+.scoreboard-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 800px;
+}
+
+.home-container, .guest-container{
+    background: rgba(12, 14, 24, 0.475);
+    border: none;
+    border-radius: 10px;
+    padding: 0px 40px 10px 40px;
+}
+
+h2,h3{
+    color: #ffffff;
+    font-size: 40px;
+}
+
+h4 {
+    margin: 0px 0px 24px 0px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.537);
+    border: 1px solid rgba(0, 0, 0, 0.537);
+    border-radius: 10px;
+    color: rgb(255, 0, 0);
+    font-size: 90px;
+}
+
+button {
+    margin: 0px 5px 40px 5px;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    background: rgb(4, 4, 24);
+    border: 2px solid;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000435;
+}
+
+#reset-btn{
+    width: 100px;
+    background-color: rgb(4, 4, 24);
+    color: #ffffff;
+    border: 1px solid;
+}
+
+#reset-btn:hover{
+    background-color: #000435;
+}
