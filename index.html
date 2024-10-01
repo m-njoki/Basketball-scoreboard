@@ -23,9 +23,8 @@
                         <button onclick="updateScore('home', 1)">+1</button>
                         <button onclick="updateScore('home', 2)">+2</button>
                         <button onclick="updateScore('home', 3)">+3</button>
-                        <button id="reset-btn" data-team="home" onclick="resetTeamScore()">Reset</button>
+                        <button onclick="resetTeamScore('home')">Reset Home</button>
                     </div>
-              </div>
             
             <!-- Guestteam's side -->
             <div class="guest-container">
@@ -37,8 +36,8 @@
                         <button onclick="updateScore('guest', 1)">+1</button>
                         <button onclick="updateScore('guest', 2)">+2</button>
                         <button onclick="updateScore('guest', 3)">+3</button>
-                        <button id="reset-btn" data-team="guest" onclick="resetTeamScore()">Reset</button>
-                    </div>                                
+                        <button onclick="resetTeamScore('guest')">Reset Guest</button>
+                    </div>                              
             </div> 
         </div>
         <script src="index.js"></script>
