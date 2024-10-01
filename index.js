@@ -1,7 +1,7 @@
 // javascript
 
-let homeScoreEl = document.getElementById("home-score")
-let guestScoreEl = document.getElementById("guest-score")
+const homeScoreEl = document.getElementById("home-score")
+const guestScoreEl = document.getElementById("guest-score")
 let homeScore = 0
 let guestScore = 0
 
