@@ -19,12 +19,12 @@
                 <h3 id="home-score">0</h3>
                 
                     <!-- Hometeam's score incrementing buttons -->
-                        <div>
-                            <button onclick="incrementHomeScore()">+1</button>
-                            <button onclick="incrementHomeScore2()">+2</button>
-                            <button onclick="incrementHomeScore3()">+3</button>
-                            <button id="reset-btn" onclick="resetScore()">Reset</button>
-                        </div>
+                    <div>
+                        <button onclick="updateScore('home', 1)">+1</button>
+                        <button onclick="updateScore('home', 2)">+2</button>
+                        <button onclick="updateScore('home', 3)">+3</button>
+                        <button id="reset-btn" onclick="resetScore()">Reset</button>
+                    </div>
               </div>
             
             <!-- Guestteam's side -->
@@ -33,12 +33,12 @@
                 <h3 id="guest-score">0</h3>
                     
                     <!-- Guestteam's score incrementing buttons -->
-                        <div>
-                            <button onclick="incrementGuestScore()">+1</button>
-                            <button onclick="incrementGuestScore2()">+2</button>
-                            <button onclick="incrementGuestScore3()">+3</button>
-                            <button id="reset-btn" onclick="resetScore()">Reset</button>
-                        </div>                                   
+                    <div>
+                        <button onclick="updateScore('guest', 1)">+1</button>
+                        <button onclick="updateScore('guest', 2)">+2</button>
+                        <button onclick="updateScore('guest', 3)">+3</button>
+                        <button id="reset-btn" onclick="resetScore()">Reset</button>
+                    </div>                                
             </div> 
         </div>
         <script src="index.js"></script>

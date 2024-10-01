@@ -1,41 +1,26 @@
-// javascript
+// Get the home and guest score elements
+const homeScoreEl = document.getElementById("home-score");
+const guestScoreEl = document.getElementById("guest-score");
 
-const homeScoreEl = document.getElementById("home-score")
-const guestScoreEl = document.getElementById("guest-score")
-let homeScore = 0
-let guestScore = 0
+// Initialize scores
+let homeScore = 0;
+let guestScore = 0;
 
-function incrementHomeScore(){
-    homeScore += 1
-    homeScoreEl.innerText = homeScore
+// Function to update the score for the given team
+function updateScore(team, points) {
+    if (team === "home") {
+        homeScore += points; // Increase home score
+        homeScoreEl.innerText = homeScore; // Update home score on the UI
+    } else if (team === "guest") {
+        guestScore += points; // Increase guest score
+        guestScoreEl.innerText = guestScore; // Update guest score on the UI
+    }
 }
 
-function incrementHomeScore2(){
-    homeScore += 2
-    homeScoreEl.innerText = homeScore
-}
-
-function incrementHomeScore3(){
-    homeScore += 3
-    homeScoreEl.innerText = homeScore
-}
-
-function incrementGuestScore(){
-    guestScore += 1
-    guestScoreEl.innerText = guestScore
-}
-
-function incrementGuestScore2(){
-    guestScore += 2
-    guestScoreEl.innerText = guestScore
-}
-
-function incrementGuestScore3(){
-    guestScore += 3
-    guestScoreEl.innerText = guestScore
-}
-
-function resetScore(){
-    document.getElementById("guest-score").innerText = guestScore = 0
-    document.getElementById("home-score").innerText = homeScore = 0
+// Function to reset both scores
+function resetScore() {
+    homeScore = 0;
+    guestScore = 0;
+    homeScoreEl.innerText = homeScore; // Reset home score display
+    guestScoreEl.innerText = guestScore; // Reset guest score display
 }
