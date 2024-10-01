@@ -10,17 +10,20 @@ let guestScore = 0;
 function updateScore(team, points) {
     if (team === "home") {
         homeScore += points; // Increase home score
-        homeScoreEl.innerText = homeScore; // Update home score on the UI
+        homeScoreEl.innerText = homeScore; // Update home score
     } else if (team === "guest") {
         guestScore += points; // Increase guest score
-        guestScoreEl.innerText = guestScore; // Update guest score on the UI
+        guestScoreEl.innerText = guestScore; // Update guest score
     }
 }
 
 // Function to reset both scores
-function resetScore() {
-    homeScore = 0;
-    guestScore = 0;
-    homeScoreEl.innerText = homeScore; // Reset home score display
-    guestScoreEl.innerText = guestScore; // Reset guest score display
+function resetTeamScore(team) {
+    if (team === "home") {
+        homeScore = 0;
+        homeScoreEl.innerText = homeScore;
+    } else if (team === "guest") {
+        guestScore = 0;
+        guestScoreEl.innerText = guestScore;
+    }
 }
